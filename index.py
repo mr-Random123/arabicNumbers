@@ -169,7 +169,9 @@ def main():
         i1 = input("add number:")
         if i1.isnumeric():
             digits = list(i1)
-            if len(digits) > 3:
+            if len(digits) >= 7:
+                print("too big of a number")
+            elif len(digits) > 3:
                 moreThan3(str(int(i1)))
             else:
                 lessThanOrEqual3(str(int(i1)))
