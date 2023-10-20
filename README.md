@@ -10,7 +10,7 @@ if a alpha numeric is found the program exits, if your unfortunately on mac<br/>
 then you can practice on [lexisrex](https://www.lexisrex.com/Arabic-Numbers/1-1000)<br/>
 it only can reach up to 999999 the millionth place is incomplete<br/>
 ## How to help
-you can help finding irregularities
+you can help finding irregularities<br/>
 ## other
 - Notes
  - should you download python?<br/>
