@@ -1,5 +1,6 @@
-*.txt
 build
 dist
+old
+*.txt
 *.jpg
 *.spec

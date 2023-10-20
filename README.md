@@ -4,7 +4,7 @@ note: this doesn't mean you will learn arabic please use other<br/>
 sources or learn it yourself this is my way of how i understand it<br/>
 ~*I am suffering*~<br/>
 ## usage
-download releases: https://github.com/mr-Random123/arabicNumbers/releases
+download releases: https://github.com/mr-Random123/arabicNumbers/releases <br/>
 index.py is used when you have python installed but there is a exe alternative,<br/>
 if a alpha numeric is found the program exits, if your unfortunately on mac<br/>
 then you can practice on [lexisrex](https://www.lexisrex.com/Arabic-Numbers/1-1000)<br/>
