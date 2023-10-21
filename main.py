@@ -44,7 +44,6 @@ def trailingZeros(ndigits):
             return None
         
 def lessThanOrEqual3(ndigits:str):
-    finalOut = ""
     if trailingZeros(ndigits) != None:
         return trailingZeros(ndigits)
     
@@ -74,18 +73,20 @@ def moreThan3(ndigits:str):
         elif i == len(ndigits)-1 and len(group) < 3:
             newDigits.append(group[::-1])
             group = []
-    newDigits = newDigits[::-1]
-    string = lessThanOrEqual3(''.join(newDigits[0])) +" "+ translate(1, 4, True) +" wa "+lessThanOrEqual3(''.join(newDigits[1]))
-    return string
+    if len(newDigits[0]) == 1:
+        return translate(newDigits, 4) +" wa "+lessThanOrEqual3(''.join(newDigits[0]))
+    else:
+        return lessThanOrEqual3(''.join(newDigits[1])) +" "+ translate(1, 4, True) +" wa "+lessThanOrEqual3(''.join(newDigits[0]))
     
 def main():
-    finalOut = ""
     while True:
+        finalOut = ""
         i1 = input("add number:")
         if not i1.isnumeric():
             break
-
-        if len(i1) >= 7:
+        if int(i1) == 0:
+            finalOut = "sifr"
+        elif len(i1) >= 7:
             print("too big of a number")
         elif len(i1) > 3:
             finalOut = moreThan3(i1)
