@@ -73,8 +73,8 @@ def moreThan3(ndigits:str):
         elif i == len(ndigits)-1 and len(group) < 3:
             newDigits.append(group[::-1])
             group = []
-    if len(newDigits[0]) == 1:
-        return translate(newDigits, 4) +" wa "+lessThanOrEqual3(''.join(newDigits[0]))
+    if len(newDigits[1]) == 1:
+        return translate(newDigits[1][0], 4) +" wa "+lessThanOrEqual3(''.join(newDigits[0]))
     else:
         return lessThanOrEqual3(''.join(newDigits[1])) +" "+ translate(1, 4, True) +" wa "+lessThanOrEqual3(''.join(newDigits[0]))
     
