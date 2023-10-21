@@ -84,6 +84,7 @@ def main():
         i1 = input("add number:")
         if not i1.isnumeric():
             break
+        i1 = str(int(i1))
         if int(i1) == 0:
             finalOut = "sifr"
         elif len(i1) >= 7:
