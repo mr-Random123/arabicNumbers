@@ -24,7 +24,7 @@ def translate(number:str, place:int, Special = False) -> str:
 
 def cleanUp(romanized:str) -> str:
     replacingWords = ["ahada ashar","ithna ashar","thalatha ashar","arba'a ashar","hhamsa ashar","sitta ashar","sab'a ashar","thamaniya ashar","tis'a ashar"]
-    keyWords = ["wahid wa ashar","ithnan wa ashar","thalathah wa ashar","arba'a wa ashar","hhamsa wa ashar","sitta wa ashar","sab'a wa ashar","thamaniya wa ashar","tis'a wa ashar",]
+    keyWords = ["wahid wa ashar","ithnan wa ashar","thalathah wa ashar","arba'a wa ashar","hhamsa wa ashar","sitta wa ashar","sab'a wa ashar","thamaniya wa ashar","tis'a wa ashar"]
     final = romanized
     for i, keyWord in enumerate(keyWords):
         final = final.replace(keyWord, replacingWords[i])
@@ -52,6 +52,8 @@ def lessThanOrEqual3(ndigits:str):
         case 3:
             if ndigits[1] == '0':
                 finalOut = translate(ndigits[0], 3) + " wa " + translate(ndigits[2], 1)
+            elif ndigits[2] == '0':
+                finalOut = translate(ndigits[0], 3) + " wa " + translate(ndigits[1], 2)
             else:
                 finalOut = translate(ndigits[0], 3) + " wa " + translate(ndigits[2], 1) + " wa " + translate(ndigits[1], 2)
         case 2:
